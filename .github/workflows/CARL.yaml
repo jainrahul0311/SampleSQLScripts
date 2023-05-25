@@ -22,6 +22,6 @@ jobs:
          cd ${{ github.workspace }}
           git_folder=$(basename "$(git rev-parse --show-toplevel)") 
           # The git folder name is mapped to the project name
-          docker run -v $(pwd):/fastScan/sourceCode castimaging/carl-java-cli carl $git_folder   
+          docker run -v $(pwd):/fastScan/sourceCode_REMOVE_ME castimaging/carl-java-cli carl $git_folder   
 
           
